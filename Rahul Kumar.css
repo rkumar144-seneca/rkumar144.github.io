@@ -1,0 +1,324 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Nerko+One&family=Noto+Sans&family=Zen+Dots&display=swap');
+body
+{
+    background-color: grey;
+
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#top
+{
+  background-color: pink;
+  background-image: url(Images/img1.jpg);
+  padding: 10px;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+}
+#top1
+{
+  background-color: black;
+  
+ padding: 10px;
+}
+
+#top3
+{
+  background-color: lightblue;
+  background-image: url(images/multicolor.jpg);
+  padding: 10px;
+  
+  
+}
+
+#top4
+{
+  background-color: yellow;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(177, 64, 243, 0.3)), url(images/contact-bg.jpg);
+  padding: 10px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  
+}
+
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 2px solid;
+
+  border-color: red;
+  border-radius: 50%;
+  margin-top: 100px;
+  width: 250px;
+  height: 250px;
+
+}
+
+.intro
+{
+  align-items: center;
+  text-align: center;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+#wrapper {
+    width:95%;  
+    margin: 0 auto; }
+
+.education-parent
+{
+   display: flex;
+    width: 50%;
+}
+.education {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 500px;
+  height: 75px;
+  background: rgba(51, 170, 51, .7);
+
+
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {padding: 14px 40px;}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+.about
+{
+  font-family: 'Zen Dots', cursive;
+ 
+  padding: 10px;
+}
+
+.heading1
+{
+  font-family: 'Nerko One', cursive;
+  text-align: center;
+  color: cyan;
+
+}
+
+h1
+{
+  font-family: 'Noto Sans';
+  color: yellow;
+  
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea, radio{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: 900;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  background: rgba(151, 170, 51, .3);
+  padding: 20px;
+  
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: center;
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #0F0119;
+    position: fixed;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    z-index: 400;
+    right: 0;
+}
+
+.nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 45px 15px 0;
+    position: relative;
+}
+
+.nav-link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-item::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #FFAB8f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-item:hover::after{
+    width: 100%;
+}
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.menu-icon div {
+    display: block;
+    background-color: #FFF;
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+.move .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+    opacity: 0;
+}
+
+.move .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+p{
+color: yellow;
+align-items: center;
+text-align: justify;
+font-family: 'Anton', sans-serif;
+}
+
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  color: cyan;
+}
